@@ -104,7 +104,7 @@ VANTA.WAVES({
   minWidth: 200.0,
   scale: 1.0,
   scaleMobile: 1.0,
-  color: 0x0,
+  color: 0x141516,
   shininess: 150.0,
   waveHeight: 40.0,
   waveSpeed: 1.25,
