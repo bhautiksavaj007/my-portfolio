@@ -1,99 +1,134 @@
 /* ---- particles.js config ---- */
 
-particlesJS("particles-js", {
-  particles: {
-    number: {
-      value: 140,
-      density: {
-        enable: true,
-        value_area: 800,
-      },
-    },
-    color: {
-      value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"],
-    },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "#fff",
-      },
-      polygon: {
-        nb_sides: 5,
-      },
-      image: {
-        src: "https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png",
-        width: 100,
-        height: 100,
-      },
-    },
+// particlesJS("particles-js", {
+//   particles: {
+//     number: {
+//       value: 140,
+//       density: {
+//         enable: true,
+//         value_area: 800,
+//       },
+//     },
+//     color: {
+//       value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"],
+//     },
+//     shape: {
+//       type: "circle",
+//       stroke: {
+//         width: 0,
+//         color: "#fff",
+//       },
+//       polygon: {
+//         nb_sides: 5,
+//       },
+//       image: {
+//         src: "https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png",
+//         width: 100,
+//         height: 100,
+//       },
+//     },
 
-    opacity: {
-      value: 1,
-      random: false,
-      anim: {
-        enable: false,
-        speed: 1,
-        opacity_min: 0.1,
-        sync: false,
-      },
-    },
-    size: {
-      value: 8,
-      random: true,
-      anim: {
-        enable: false,
-        speed: 10,
-        size_min: 10,
-        sync: false,
-      },
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#808080",
-      opacity: 0.4,
-      width: 1,
-    },
-    move: {
-      enable: true,
-      speed: 5,
-      direction: "none",
-      random: false,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200,
-      },
-    },
-  },
-  interactivity: {
-    detect_on: "window",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "repulse",
-      },
-      onclick: {
-        enable: true,
-        mode: "push",
-      },
-    },
-    modes: {
-      repulse: {
-        distance: 70,
-        duration: 0.4,
-      },
-      push: {
-        particles_nb: 4,
-      },
-    },
-  },
-  retina_detect: true,
+//     opacity: {
+//       value: 1,
+//       random: false,
+//       anim: {
+//         enable: false,
+//         speed: 1,
+//         opacity_min: 0.1,
+//         sync: false,
+//       },
+//     },
+//     size: {
+//       value: 8,
+//       random: true,
+//       anim: {
+//         enable: false,
+//         speed: 10,
+//         size_min: 10,
+//         sync: false,
+//       },
+//     },
+//     line_linked: {
+//       enable: true,
+//       distance: 150,
+//       color: "#808080",
+//       opacity: 0.4,
+//       width: 1,
+//     },
+//     move: {
+//       enable: true,
+//       speed: 5,
+//       direction: "none",
+//       random: false,
+//       straight: false,
+//       out_mode: "out",
+//       bounce: false,
+//       attract: {
+//         enable: false,
+//         rotateX: 600,
+//         rotateY: 1200,
+//       },
+//     },
+//   },
+//   interactivity: {
+//     detect_on: "window",
+//     events: {
+//       onhover: {
+//         enable: true,
+//         mode: "repulse",
+//       },
+//       onclick: {
+//         enable: true,
+//         mode: "push",
+//       },
+//     },
+//     modes: {
+//       repulse: {
+//         distance: 70,
+//         duration: 0.4,
+//       },
+//       push: {
+//         particles_nb: 4,
+//       },
+//     },
+//   },
+//   retina_detect: true,
+// });
+
+// VANTA.WAVES({
+//   el: "#particles-js",
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.0,
+//   minWidth: 200.0,
+//   scale: 1.0,
+//   scaleMobile: 1.0,
+//   color: 0x0,
+//   shininess: 150.0,
+//   waveHeight: 40.0,
+//   waveSpeed: 1.25,
+//   zoom: 0.96,
+// });
+VANTA.BIRDS({
+  el: "#particles-js",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.0,
+  minWidth: 200.0,
+  scale: 1.0,
+  scaleMobile: 1.0,
+  birdSize: 0.5,
+  wingSpan: 40.0,
+  speedLimit: 2.0,
+  separation: 18.0,
+  alignment: 5.0,
+  cohesion: 12.0,
+  // backgroundColor:
 });
+console.log("demo", localStorage.getItem("lightMode"));
+
 const allElements = document.querySelectorAll(".animated-text");
 
 // It checks if there is at least one element
