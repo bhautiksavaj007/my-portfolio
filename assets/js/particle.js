@@ -95,22 +95,7 @@
 //   retina_detect: true,
 // });
 
-// VANTA.WAVES({
-//   el: "#particles-js",
-//   mouseControls: true,
-//   touchControls: true,
-//   gyroControls: false,
-//   minHeight: 200.0,
-//   minWidth: 200.0,
-//   scale: 1.0,
-//   scaleMobile: 1.0,
-//   color: 0x0,
-//   shininess: 150.0,
-//   waveHeight: 40.0,
-//   waveSpeed: 1.25,
-//   zoom: 0.96,
-// });
-VANTA.BIRDS({
+VANTA.WAVES({
   el: "#particles-js",
   mouseControls: true,
   touchControls: true,
@@ -119,15 +104,30 @@ VANTA.BIRDS({
   minWidth: 200.0,
   scale: 1.0,
   scaleMobile: 1.0,
-  birdSize: 0.5,
-  wingSpan: 40.0,
-  speedLimit: 2.0,
-  separation: 18.0,
-  alignment: 5.0,
-  cohesion: 12.0,
-  // backgroundColor:
+  color: 0x0,
+  shininess: 150.0,
+  waveHeight: 40.0,
+  waveSpeed: 1.25,
+  zoom: 0.96,
 });
-console.log("demo", localStorage.getItem("lightMode"));
+// VANTA.BIRDS({
+//   el: "#particles-js",
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.0,
+//   minWidth: 200.0,
+//   scale: 1.0,
+//   scaleMobile: 1.0,
+//   birdSize: 0.5,
+//   wingSpan: 40.0,
+//   speedLimit: 2.0,
+//   separation: 18.0,
+//   alignment: 5.0,
+//   cohesion: 12.0,
+//   // backgroundColor:
+// });
+// console.log("demo", localStorage.getItem("lightMode"));
 
 const allElements = document.querySelectorAll(".animated-text");
 
